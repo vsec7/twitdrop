@@ -38,7 +38,7 @@ if ($conn->getLastHttpCode() == 200) {
   if ($conn->getLastHttpCode() == 200) {
     echo "[+] Follow @". $data[3]." : Success\n";
   } else {
-    echo "[+] Follow @". $data[3]." : Success\n";
+    echo "[+] Follow @". $data[3]." : Failed\n";
   }
 
   $conn->post('favorites/create', ['id' => $data[5]]);
